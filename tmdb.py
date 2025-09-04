@@ -14,7 +14,7 @@ genres = {}
 for genre in data['genres']:
     genres[genre['id']] = genre['name']
 
-response = requests.get(f'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&language=en-US&page=1&primary_release_date.gte=2023-01-01&vote_average.gte=5.5&with_genres=28&api_key={api_key}')
+response = requests.get(f'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&language=en-US&page=1&primary_release_date.gte=2024-07-24&vote_average.gte=7.7&with_genres=35&api_key={api_key}')
 data = response.json()
 
 for movie in data['results']:
